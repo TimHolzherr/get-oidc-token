@@ -11,7 +11,7 @@
     "url": "git+https://github.com/TimHolzherr/get-oidc-token.git"
   },
   "bin": {
-    "get-oidc-token": "./cli.js"
+    "get-oidc-token": "node cli.js"
   },
   "keywords": [
     "oidc",
