@@ -1,0 +1,35 @@
+{
+  "name": "get-oidc-token",
+  "version": "0.0.1",
+  "description": "Retrieves an access token via Open Id Connect Implicit flow",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimHolzherr/get-oidc-token.git"
+  },
+  "bin": {
+    "get-oidc-token": "./cli.js"
+  },
+  "keywords": [
+    "oidc",
+    "access",
+    "token",
+    "implicit",
+    "flow"
+  ],
+  "author": "TimHolzherr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimHolzherr/get-oidc-token/issues"
+  },
+  "homepage": "https://github.com/TimHolzherr/get-oidc-token#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "open": "^7.0.3",
+    "pug": "^2.0.4",
+    "yargs": "^15.3.1"
+  }
+}

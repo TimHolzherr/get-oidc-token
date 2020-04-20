@@ -1,0 +1,16 @@
+html
+  head
+    title Token receiver
+    script(src="/oidc-client.js")  
+    script.
+      const settings = {          
+        authority: "#{authority}",
+        client_id: "#{clientId}",
+        redirect_uri: window.location.href,
+        response_type: "id_token token",
+        scope: "#{scope}",
+        filterProtocolClaims: true,
+      };
+    script(src="/client.js")
+
+  
