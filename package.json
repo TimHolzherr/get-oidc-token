@@ -1,6 +1,6 @@
 {
   "name": "get-oidc-token",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Retrieves an access token via Open Id Connect Implicit flow",
   "main": "cli.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/TimHolzherr/get-oidc-token.git"
   },
   "bin": {
-    "get-oidc-token": "node cli.js"
+    "get-oidc-token": "cli.js"
   },
   "keywords": [
     "oidc",

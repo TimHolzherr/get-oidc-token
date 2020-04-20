@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const getToken = require("./server");
 
 const argv = require("yargs")

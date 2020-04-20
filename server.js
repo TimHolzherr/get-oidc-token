@@ -1,11 +1,11 @@
 const express = require("express");
 const http = require("http");
-const CWD = process.cwd();
 const app = express();
 const open = require("open");
 
 function getToken(authority, clientId, scope, port) {
   app.set("view engine", "pug");
+  app.set("views", __dirname);
   app.get("/", function (req, res) {
     res.render("index", {
       authority: authority,
@@ -13,7 +13,7 @@ function getToken(authority, clientId, scope, port) {
       scope: scope,
     });
   });
-  app.use(express.static(CWD));
+  app.use(express.static(__dirname));
   app.use(express.json());
   app.post("/token", function (req, res) {
     console.log(req.body.token);
