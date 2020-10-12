@@ -3,7 +3,7 @@ const http = require("http");
 const app = express();
 const open = require("open");
 
-function getToken(authority, clientId, scope, port) {
+function getToken(authority, clientId, scope, responseType, port) {
   app.set("view engine", "pug");
   app.set("views", __dirname);
   app.get("/", function (req, res) {
@@ -11,6 +11,7 @@ function getToken(authority, clientId, scope, port) {
       authority: authority,
       clientId: clientId,
       scope: scope,
+      responseType: responseType
     });
   });
   app.use(express.static(__dirname));

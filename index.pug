@@ -7,7 +7,7 @@ html
         authority: "#{authority}",
         client_id: "#{clientId}",
         redirect_uri: window.location.href,
-        response_type: "id_token token",
+        response_type: "#{responseType}",
         scope: "#{scope}",
         filterProtocolClaims: true,
       };
