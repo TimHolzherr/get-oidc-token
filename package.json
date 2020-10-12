@@ -1,6 +1,6 @@
 {
   "name": "get-oidc-token",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Retrieves an access token via Open Id Connect Implicit flow",
   "main": "cli.js",
   "scripts": {
